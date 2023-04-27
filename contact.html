@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - Yogdisha Kendra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #5cc22d;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 10vh;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    
+    textarea {
+      resize: vertical;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #5cc22d;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: white;
+      color: #60bc0a;
+      border: 1px solid #60bc0a;
+      font-weight: 550;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="contact_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="message">Query:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+      <input type="submit" value="Send Message" onclick="shows_alert()">
+    </form>
+  </div>
+  <script>
+    function shows_alert(){  
+    alert("Are you sure you want this information.");
+    }
+  </script>
+</body>
+</html>

@@ -63,6 +63,20 @@
       border: 1px solid #60bc0a;
       font-weight: 550;
     }
+    input[type="button"] {
+      margin: 10px 0px;
+      padding: 10px 20px;
+      background-color: #5cc22d;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="button"]:hover {
+      background-color: white;
+      color: #60bc0a;
+      border: 1px solid #60bc0a;
+      font-weight: 550;
+    }
   </style>
 </head>
 <body>
@@ -76,11 +90,17 @@
       <label for="message">Query:</label>
       <textarea id="message" name="message" rows="6" required></textarea>
       <input type="submit" value="Send Message" onclick="shows_alert()">
+      <br>
+      <br>
+      <input type="button" value="Back" onclick="goBack()" >
     </form>
   </div>
   <script>
     function shows_alert(){  
     alert("Are you sure you want this information.");
+    }
+    function goBack(){
+      window.location.href = "index.html";
     }
   </script>
 </body>

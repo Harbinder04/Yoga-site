@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    display: flex;
+    background-color:#60bc0a ;
+  }
+  header h1{
+    margin: 20px;
+    color: white;
+  }
+  header ul{
+    margin-left: 30em;
+    padding: 10px 0px;
+  }
+  header ul li{
+    margin-left: 40px;
+    display: inline-block;
+  }
+
+  header ul li a{
+   background-color: #fff;
+   text-decoration: none;
+   padding: 5px;
+   border: 1px solid white;
+   border-radius: 20px;
+  }
+  header li:hover a, header li span{
+    background: #FFF;
+    color: #0074D9;
+    text-decoration: none;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  .course {
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #666;
+  }
+  
+  .instructor {
+    color: #888;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  .duration,
+  .price {
+    margin-top: 10px;
+    color: #555;
+  }
+
+  footer{
+    color: #fff;
+    border: 10px ;
+    overflow: hidden;
+    padding: 2em 0em;
+    border-top: 20px solid rgba(238, 248, 237, 0.08);
+    text-align: center;
+    background: #4CAF50;
+  }
+  
